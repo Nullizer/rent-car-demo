@@ -1,0 +1,85 @@
+{
+  "connection": "default",
+  "collectionName": "cars",
+  "info": {
+    "name": "car",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "area": {
+      "enum": [
+        "bayArea",
+        "northCoast"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "availability": {
+      "enum": [
+        "notAvailable",
+        "available"
+      ],
+      "type": "enumeration"
+    },
+    "color": {
+      "enum": [
+        "silver",
+        "black",
+        "white"
+      ],
+      "type": "enumeration"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "make": {
+      "enum": [
+        "audi",
+        "toyota",
+        "jeep",
+        "bmw"
+      ],
+      "type": "enumeration"
+    },
+    "mileage": {
+      "type": "biginteger"
+    },
+    "model": {
+      "type": "string"
+    },
+    "mpgCity": {
+      "type": "integer"
+    },
+    "mpgHighway": {
+      "type": "integer"
+    },
+    "numberOfDoors": {
+      "type": "integer"
+    },
+    "occupancy": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "size": {
+      "enum": [
+        "compact",
+        "midsize",
+        "large"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "year": {
+      "type": "integer"
+    }
+  }
+}
