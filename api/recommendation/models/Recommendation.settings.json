@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "recommendations",
+  "info": {
+    "name": "recommendation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "makes": {
+      "type": "string"
+    },
+    "minPrice": {
+      "type": "integer"
+    },
+    "maxPrice": {
+      "type": "integer"
+    },
+    "minYear": {
+      "type": "integer"
+    },
+    "maxYear": {
+      "type": "integer"
+    }
+  }
+}

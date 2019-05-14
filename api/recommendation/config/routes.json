@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recommendations/:id/cars",
+      "handler": "Recommendation.findCars",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recommendations",
+      "handler": "Recommendation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recommendations/count",
+      "handler": "Recommendation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recommendations/:id",
+      "handler": "Recommendation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recommendations",
+      "handler": "Recommendation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recommendations/:id",
+      "handler": "Recommendation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recommendations/:id",
+      "handler": "Recommendation.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
